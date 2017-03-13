@@ -211,11 +211,56 @@ a {
   background-color: #900;
 }
 .navbar-custom .navbar-brand {
-  color: #777;
+  color: #fff;
 }
-.navbar-custom:hover {
-  color: #5e5e5e;
+.navbar-custom .navbar-brand:hover {
+  background-color: #d71e1e;
 }
-.navbar-custom:focus {
-  color: #5e5e5e;
+.navbar-custom .navbar-brand:focus {
+  background-color: #d71e1e;
+}
+.navbar-custom .navbar-brand > li > a {
+  color: #fff;
+}
+.navbar-custom .navbar-brand > li > a:hover {
+  background-color: #d71e1e;
+}
+.navbar-custom .navbar-brand > li > a:focus {
+  background-color: #d71e1e;
+}
+.navbar-custom .navbar-brand > .active > a {
+  color: #fff;
+  background-color: #900;
+}
+.navbar-custom .navbar-brand > .active > a:hover {
+  color: #fff;
+  background-color: #d71e1e;
+}
+.navbar-custom .navbar-brand > .active > a:focus {
+  color: #fff;
+  background-color: #d71e1e;
+}
+.navbar-custom .navbar-brand > .open > a {
+  color: #fff;
+  background-color: #900;
+}
+.navbar-custom .navbar-brand > .open > a:hover {
+  color: #fff;
+  background-color: #900;
+}
+.navbar-custom .navbar-brand > .open > a:focus {
+  color: #fff;
+  background-color: #900;
+}
+.navbar-custom .navbar-brand > .dropdown > a .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar-custom .navbar-brand > .dropdown > a:hover .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar-custom .navbar-brand > .dropdown > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }

@@ -4,10 +4,10 @@ back1_color = #637884
 back2_color = #BD255B
 gris_oscuro = #333333
 gris_claro = #818181
-rojo = #990000
 gris_mas_claro = #F0F0F0
-blanco = #FFFFFF
-
+rojo_background = #990000
+rojo_hover = #D71E1E
+letra = #FFFFFF
 a
     text-decoration none
 
@@ -33,11 +33,44 @@ a
     width 30%
 
 .navbar-custom
-    color blanco
-    background-color rojo
+    color letra
+    background-color rojo_background
     .navbar-brand
-        color #777
-    &:hover
-        color: #5E5E5E;
-    &:focus
-        color: #5E5E5E;
+        color letra
+        &:hover
+            background-color rojo_hover
+        &:focus
+            background-color rojo_hover
+        > li > a
+            color letra
+            &:hover
+                background-color rojo_hover
+            &:focus
+                background-color rojo_hover
+        > .active > a
+            color letra
+            background-color rojo_background
+            &:hover
+                color letra
+                background-color rojo_hover
+            &:focus
+                color letra
+                background-color rojo_hover
+        > .open > a
+            color letra
+            background-color rojo_background
+            &:hover
+                color letra
+                background-color rojo_background
+            &:focus
+                color letra
+                background-color rojo_background
+        > .dropdown > a .caret
+            border-top-color letra
+            border-bottom-color letra
+        > .dropdown > a:hover .caret
+            border-top-color letra
+            border-bottom-color letra
+        > .dropdown > a:focus .caret
+            border-top-color letra
+            border-bottom-color letra
