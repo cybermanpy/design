@@ -27,7 +27,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Inicio</a>
+        <a class="navbar-brand" href="">Inicio</a>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
@@ -50,8 +50,9 @@
                 Carreras Acreditadas <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="{% url 'namecareers:list' %}">Listar</a></li>
-                <li><a href="{% url 'namecareers:new' %}">Agregar</a></li>
+                <li><a href="">Modelo Nacional</a></li>
+                <li><a href="">Modelo ARCUSUR</a></li>
+                <li><a href="">Historicos</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -59,8 +60,7 @@
                 Programas Acreditados <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="{% url 'resolutions:view' %}">Listar</a></li>
-                <li><a href="{% url 'resolutions:new' %}">Agregar</a></li>
+                <li><a href="">Postgrados</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -68,8 +68,11 @@
                 Registro de Pares <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="{% url 'nationalities:view' %}">Listar</a></li>
-                <li><a href="{% url 'nationalities:new' %}">Agregar</a></li>
+                <li><a href="">Pares Evaluadores de Carreras de Grado</a></li>
+                <li><a href="">Pares Evaluadores Institucionales</a></li>
+                <li><a href="">Pares Evaluadores Sistema ARCUSUR</a></li>
+                <li><a href="">Acceso a Pares Evaluadores</a></li>
+                <li><a href="">Curriculum Vitae Estandarizado</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -78,24 +81,31 @@
           </ul>
         </div>
     </nav>
-  </header>
-  <section id="portada"> <!-- portada -->
-    <figure> <!-- acceso a la información pública -->
-      <img src="images/accesoInformacionPublicaBtnGral.png" alt="">
-    </figure>
-    <figure>
-      <img src="images/informacionPublicaBtnGral.png" alt="">
-    </figure>
-    <figure>
-      <img src="images/denunciasBtn.png" alt="">
-    </figure>
+  </header> 
+  <section id="slide" class="slide"> <!-- slide -->
     <figure> <!-- 3 ultimas noticias Breves con imagenes -->
       <img src="images/noticias.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum perspiciatis dolorem commodi aspernatur tempore quasi corporis dicta nam architecto est alias sint eligendi placeat quas eius quia, quos nostrum impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptatem consectetur odit labore quis cumque magnam doloribus rerum veniam voluptates similique recusandae est, iure perferendis deleniti, beatae provident ratione in.
+      </figcaption>
     </figure>
-    <button>Tramites</button> <!-- botones tramites servicios compras publicas -->
-    <button>Servicios</button>
-    <button>Compras Públicas</button>
   </section>
+  <section>
+    <article id="information" class="information">
+      <figure> <!-- acceso a la información pública -->
+        <img src="images/accesoInformacionPublicaBtnGral.png" alt="">
+      </figure>
+      <figure>
+        <img src="images/informacionPublicaBtnGral.png" alt="">
+      </figure>
+      <figure>
+        <img src="images/denunciasBtn.png" alt="">
+      </figure>
+    </article>
+  </section>
+  <!-- <button>Tramites</button> botones tramites servicios compras publicas
+  <button>Servicios</button>
+  <button>Compras Públicas</button> -->
   <section id="noticias"> <!-- noticias -->
     <h2 class="title">Noticias</h2> <!-- titulo noticias -->
     <article> <!-- noticias -->

@@ -8,6 +8,7 @@ gris_mas_claro = #F0F0F0
 rojo_background = #990000
 rojo_hover = #D71E1E
 letra = #FFFFFF
+gris = #888
 a
     text-decoration none
 
@@ -27,50 +28,65 @@ a
     background back1_color
 .logo
     display flex
+    justify-content space-around
 .logotipo1
     width 70%
 .logotipo2
     width 30%
 
+/* section portada */
+.information
+    img
+        height auto
+        width 50%
+.last
+    img
+        height auto
+        width 80%
+.slide
+    figure
+        display flex
+        justify-content space-around
+        img
+        figcaption
+            padding 4px
+/* Section menu */
 .navbar-custom
-    color letra
     background-color rojo_background
+    border-width 1px
+    border-radius 4px
+    color letra
+    font-size 14px
     .navbar-brand
+        background-color rojo_background
         color letra
         &:hover
             background-color rojo_hover
+    .navbar-nav > li > a
+        background-color rojo_background
+        color letra
+        &:hover
         &:focus
             background-color rojo_hover
-        > li > a
-            color letra
-            &:hover
-                background-color rojo_hover
-            &:focus
-                background-color rojo_hover
         > .active > a
+        &:hover
+        &:focus
+            background-color rojo_hover
+    .navbar-toggle
+        border-color letra
+        &:hover
+        &:focus
+            background-color letra
+            .icon-bar
+                background-color gris
+        .icon-bar
+            background-color gris
+.dropdown-menu
+    background-color rojo_background
+    > li > a
+        border-color rojo_background
+        color letra
+        &:hover
+        &:focus
+            background-color rojo_hover
             color letra
-            background-color rojo_background
-            &:hover
-                color letra
-                background-color rojo_hover
-            &:focus
-                color letra
-                background-color rojo_hover
-        > .open > a
-            color letra
-            background-color rojo_background
-            &:hover
-                color letra
-                background-color rojo_background
-            &:focus
-                color letra
-                background-color rojo_background
-        > .dropdown > a .caret
-            border-top-color letra
-            border-bottom-color letra
-        > .dropdown > a:hover .caret
-            border-top-color letra
-            border-bottom-color letra
-        > .dropdown > a:focus .caret
-            border-top-color letra
-            border-bottom-color letra
