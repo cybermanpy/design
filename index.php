@@ -18,7 +18,7 @@
         <img src="images/gobiernoLogoEspanolGuaraniSmWhiteV2.png" alt="Logo Gobierno">
       </figure>
     </section>
-    <nav class="navbar navbar-custom"><!-- menu -->
+    <nav class="navbar navbar-custom" role="navigation"><!-- menu -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse"
                 data-target=".navbar-ex1-collapse">

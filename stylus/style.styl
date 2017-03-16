@@ -9,48 +9,8 @@ rojo_background = #990000
 rojo_hover = #D71E1E
 letra = #FFFFFF
 gris = #888
-a
-    text-decoration none
 
-.wrap
-    margin-right auto
-    margin-left auto
-    width 940px
-    
-.title
-    font-size 30px
-    &-a
-        font-size 20px
-
-.header
-    height auto
-    border none
-    background back1_color
-.logo
-    display flex
-    justify-content space-around
-.logotipo1
-    width 70%
-.logotipo2
-    width 30%
-
-/* section portada */
-.information
-    img
-        height auto
-        width 50%
-.last
-    img
-        height auto
-        width 80%
-.slide
-    figure
-        display flex
-        justify-content space-around
-        img
-        figcaption
-            padding 4px
-/* Section menu */
+/* section mobile */
 .navbar-custom
     background-color rojo_background
     border-width 1px
@@ -78,7 +38,7 @@ a
         &:focus
             background-color letra
             .icon-bar
-                background-color gris
+                background-color rojo_hover
         .icon-bar
             background-color gris
 .dropdown-menu
@@ -90,3 +50,86 @@ a
         &:focus
             background-color rojo_hover
             color letra
+
+/* section desktop */
+@media screen and (min-width:480px)
+    a
+        text-decoration none
+
+    .wrap
+        margin-right auto
+        margin-left auto
+        width 940px
+        
+    .title
+        font-size 30px
+        &-a
+            font-size 20px
+
+    .header
+        height auto
+        border none
+        background back1_color
+    .logo
+        display flex
+        justify-content space-around
+    .logotipo1
+        width 70%
+    .logotipo2
+        width 30%
+
+    /* section portada */
+    .information
+        img
+            height auto
+            width 50%
+    .last
+        img
+            height auto
+            width 80%
+    .slide
+        figure
+            display flex
+            justify-content space-around
+            img
+            figcaption
+                padding 4px
+    .navbar-custom
+        background-color rojo_background
+        border-width 1px
+        border-radius 4px
+        color letra
+        font-size 14px
+        .navbar-brand
+            background-color rojo_background
+            color letra
+            &:hover
+                background-color rojo_hover
+        .navbar-nav > li > a
+            background-color rojo_background
+            color letra
+            &:hover
+            &:focus
+                background-color rojo_hover
+            > .active > a
+            &:hover
+            &:focus
+                background-color rojo_hover
+        .navbar-toggle
+            border-color letra
+            &:hover
+            &:focus
+                background-color letra
+                .icon-bar
+                    background-color gris
+            .icon-bar
+                background-color gris
+    .dropdown-menu
+        background-color rojo_background
+        > li > a
+            border-color rojo_background
+            color letra
+            &:hover
+            &:focus
+                background-color rojo_hover
+                color letra
